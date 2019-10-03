@@ -1,0 +1,88 @@
+html {box-sizing:border-box;}
+*, *::before, *::after {box-sizing:inherit}
+
+body{
+    background-color: rgb(107, 161, 208);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+label {
+    color: rgb(230, 230, 230);
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 5px 0px -12px;
+}
+
+input {
+    border: 2px solid rgb(230, 230, 230);
+    background-color: rgb(107, 161, 208);
+    color: rgb(230, 230, 230);
+    font-size: 15px;
+    width: 300px;
+    padding: 10px;
+}
+
+@keyframes example {
+    from {background-color: rgb(107, 161, 208);}
+  to {background-color: rgb(78, 106, 129);}
+}
+
+
+
+textarea {
+    border: 2px solid rgb(230, 230, 230);
+    color: rgb(230, 230, 230);
+    padding: 5px;
+    background-color: rgb(107, 161, 208);
+    font-size: 15px;
+    padding: 10px;
+    width: 300px;
+}
+
+select {
+    border: 2px solid rgb(230, 230, 230);
+    padding: 5px;
+    background-color: rgb(107, 161, 208);
+    font-size: 15px;
+    color: rgb(230, 230, 230);
+    width: 300px;
+}
+
+input:focus{
+    outline: 0px;
+    border: 2px solid rgb(63, 109, 153);
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+textarea:focus{
+    outline: 0px;
+    border: 2px solid rgb(63, 109, 153);
+}
+
+input::placeholder{
+    color: rgb(78, 106, 129);
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+
+/* align into columns */
+
+form {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+div {
+    margin: 20px;
+    flex-direction: column;
+    display: flex;
+
+}
+
+
+
